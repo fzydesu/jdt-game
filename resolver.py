@@ -45,6 +45,8 @@ class ActionResolver:
                 detail = f"玩家2攻击力更强！造成{damage_to_1}点伤害"
             else:
                 detail = "双方攻击互相抵消！"
+                damage_to_1 = 0
+                damage_to_2 = 0
         
         new_state1['hp'] -= damage_to_1
         new_state2['hp'] -= damage_to_2

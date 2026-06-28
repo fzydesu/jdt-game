@@ -23,15 +23,31 @@ ACTION_TYPES = {
         'damage': 2,
         'defense': 0,
         'description': '消耗1J，造成2点伤害'
+    },
+    'X': {
+        'name': '必杀技',
+        'cost': 3,
+        'gain': 0,
+        'damage': 5,
+        'defense': 0,
+        'description': '消耗3J，造成5点伤害'
+    },
+    'Y': {
+        'name': '必杀技',
+        'cost': 3,
+        'gain': 0,
+        'damage': 5,
+        'defense': 0,
+        'description': '消耗3J，造成5点伤害'
+    },
+    'Z': {
+        'name': '必杀技',
+        'cost': 3,
+        'gain': 0,
+        'damage': 5,
+        'defense': 0,
+        'description': '消耗3J，造成5点伤害'
     }
-    # 'X': {
-    #     'name': '必杀技',
-    #     'cost': 3,
-    #     'gain': 0,
-    #     'damage': 5,
-    #     'defense': 0,
-    #     'description': '消耗3J，造成5点伤害'
-    # }
 }
 
 INITIAL_STATE = {
