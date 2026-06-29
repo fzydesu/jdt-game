@@ -33,7 +33,7 @@ HTML_PAGE = '''
             backdrop-filter: blur(10px);
             border-radius: 20px;
             padding: 40px;
-            width: 500px;
+            width: 700px;
             max-width: 95%;
             box-shadow: 0 20px 60px rgba(0,0,0,0.5);
             border: 1px solid rgba(255,255,255,0.1);
@@ -204,7 +204,7 @@ HTML_PAGE = '''
     <div class="stats">
         <div class="stat-item">
             <div class="label">❤️ 生命值</div>
-            <div class="value hp" id="hpDisplay">10</div>
+            <div class="value hp" id="hpDisplay">5</div>
         </div>
         <div class="stat-item">
             <div class="label">⚡ J气</div>
@@ -242,11 +242,20 @@ let mySid = null;
 
 // 招式图标映射（新增技能时在这里加图标）
 const actionEmoji = {
-    'J': '🌀',
-    'D': '🛡️',
-    'T': '⚡'
-    // 示例：新技能 'X' 可以加在这里
-    // 'X': '💥',
+    // ===== 进攻技能（攻击力递增） =====
+    'J': '🌀',    // 攒J - 聚气
+    '掏': '👊',    // 掏 - 消耗1J，造成1伤害（轻拳）
+    '戳': '✊',    // 戳 - 消耗2J，造成2伤害（重拳）
+    '爆': '💥',    // 爆/拍 - 消耗3J，造成3伤害（爆发）
+    '剪': '✂️',    // 剪 - 消耗4J，造成4伤害（剪刀）
+    '捏': '🤏',    // 捏 - 消耗5J，造成5伤害（捏碎）
+    '砍': '🗡️',    // 砍/阿西吧！ - 消耗6J，造成6伤害（刀砍）
+    '吃': '🍽️',    // 吃 - 消耗7J，造成7伤害（吃掉！）
+    
+    // ===== 防御技能 =====
+    '挡': '🛡️',    // 挡 - 基础防御，抵挡2伤害
+    '铛！': '🔊',    // 铛！ - 消耗1J，抵挡5伤害（金属碰撞声）
+    '护板': '🏏',    // 护板 - 消耗2J，抵挡8伤害（护盾板）
 };
 
 // ===== 获取所有技能并渲染按钮 =====
